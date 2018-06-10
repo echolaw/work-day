@@ -1,0 +1,11 @@
+{
+  "type": "mongodb",
+  "host": "192.168.60.128",
+  "database": "work_day_dev",
+  "username": "workDay",
+  "password": "workDayDev",
+  "entities": [
+    "src/**/**.entity{.ts,.js}"
+  ],
+  "synchronize": true
+}

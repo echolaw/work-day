@@ -1,0 +1,46 @@
+{
+  "name": "work-day",
+  "private": true,
+  "version": "1.0.0",
+  "description": "办公考勤系统",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon -e ts -w ./src -x yarn start:debug",
+    "start:debug": "node --inspect=9228 -r ts-node/register src/main.ts",
+    "prestart:prod": "rimraf dist && tsc",
+    "start:prod": "node dist/main.js"
+  },
+  "dependencies": {
+    "@nestjs/common": "^5.0.0",
+    "@nestjs/core": "^5.0.0",
+    "@nestjs/passport": "^1.0.10",
+    "@nestjs/typeorm": "^5.0.0",
+    "bcrypt": "^2.0.1",
+    "class-transformer": "^0.1.9",
+    "class-validator": "^0.8.5",
+    "jsonwebtoken": "^8.2.2",
+    "mongodb": "^3.0.10",
+    "passport": "^0.4.0",
+    "passport-http-bearer": "^1.0.1",
+    "passport-jwt": "^4.0.0",
+    "passport-local": "^1.0.0",
+    "reflect-metadata": "^0.1.12",
+    "rxjs": "^6.2.0",
+    "typeorm": "^0.2.6",
+    "typescript": "^2.8.0"
+  },
+  "devDependencies": {
+    "@nestjs/testing": "^5.0.1",
+    "@types/bcrypt": "^2.0.0",
+    "@types/jasmine": "^2.8.8",
+    "@types/jsonwebtoken": "^7.2.7",
+    "@types/node": "^8.10.18",
+    "@types/passport-jwt": "^3.0.1",
+    "@types/passport-local": "^1.0.33",
+    "nodemon": "^1.17.5",
+    "rimraf": "^2.6.2",
+    "ts-node": "^6.1.0",
+    "tsconfig-paths": "^3.3.2",
+    "tslint": "^5.10.0"
+  }
+}
