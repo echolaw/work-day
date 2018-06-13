@@ -1,5 +1,5 @@
 declare module 'resultFormat' {
-  export interface IResult<T> {
+  export interface IResult<T = any> {
     code?: number;
     data?: T;
     err?: any;
