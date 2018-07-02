@@ -1,16 +1,10 @@
-import { Entity, Column, ObjectIdColumn, ObjectID, Index } from 'typeorm';
+import { Entity, Column, ObjectIdColumn, ObjectID, Index, CreateDateColumn, UpdateDateColumn } from 'typeorm';
 import * as bcrypt from 'bcrypt';
-import { AddUser } from './dto/add-user.dto';
-import { IsString, IsNotEmpty } from 'class-validator';
-import { serialize } from 'class-transformer';
+import { IsString, IsNotEmpty, IsArray, IsBoolean, IsMobilePhone, IsEmail, IsNumber } from 'class-validator';
+import { Base } from '../common/entity/base.entity';
 
 @Entity()
-export class User {
-  /**
-   * User Id
-   */
-  @ObjectIdColumn() public id: ObjectID;
-
+export class User extends Base {
   /**
    * 用户登录名称
    */
@@ -35,8 +29,42 @@ export class User {
   @Column()
   @IsString()
   @IsNotEmpty()
+  @IsEmail()
   @Index({ unique: true })
   public email: string;
+  /**
+   * 手机号
+   */
+  @Column()
+  @IsString()
+  @IsNotEmpty()
+  @IsMobilePhone('zh-CN')
+  @Index({ unique: true })
+  public mobile: string;
+
+  @Column()
+  @IsString()
+  public avatar: string = './assets/tmp/img/avatar.jpg';
+
+  /**
+   * @description user | manager | su
+   */
+  @Column()
+  @IsArray()
+  public roles: string[] = ['user'];
+
+  @Column()
+  @IsArray()
+  public groups: string[] = ['default'];
+
+  @Column()
+  @IsBoolean()
+  public enabled: boolean = false;
+  @Column()
+  @IsNumber()
+  public status: number = 0;
+
+  @Column() public description: string;
 
   public setPassword(plainTextPassword: string) {
     const saltRounds = 2;

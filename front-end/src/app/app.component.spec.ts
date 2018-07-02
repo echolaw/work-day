@@ -1,41 +1,18 @@
-/* tslint:disable:no-unused-variable */
-
-import { TestBed, async} from '@angular/core/testing';
-import { AppComponent } from './app.component';
-import { TranslateModule } from '@ngx-translate/core';
-
-import { CoreModule } from './core/core.module';
-import { LayoutModule } from './layout/layout.module';
-import { SharedModule } from './shared/shared.module';
-import { RoutesModule } from './routes/routes.module';
+import { TestBed, TestModuleMetadata } from '@angular/core/testing';
 import { APP_BASE_HREF } from '@angular/common';
+import { setUpTestBed } from '@testing/common.spec';
 
-describe('App: Ng2angle', () => {
-    beforeEach(() => {
+import { AppComponent } from './app.component';
 
-        jasmine.DEFAULT_TIMEOUT_INTERVAL = 60000;
+describe('Component: App', () => {
+  setUpTestBed(<TestModuleMetadata>{
+    declarations: [AppComponent],
+    providers: [{ provide: APP_BASE_HREF, useValue: '/' }],
+  });
 
-        TestBed.configureTestingModule({
-            declarations: [
-                AppComponent
-            ],
-            imports: [
-                TranslateModule.forRoot(),
-                CoreModule,
-                LayoutModule,
-                SharedModule,
-                RoutesModule
-            ],
-            providers: [
-                { provide: APP_BASE_HREF, useValue: '/' }
-            ]
-        });
-    });
-
-    it('should create the app', async(() => {
-        let fixture = TestBed.createComponent(AppComponent);
-        let app = fixture.debugElement.componentInstance;
-        expect(app).toBeTruthy();
-    }));
-
+  it('should create the app', () => {
+    const fixture = TestBed.createComponent(AppComponent);
+    const comp = fixture.debugElement.componentInstance;
+    expect(comp).toBeTruthy();
+  });
 });

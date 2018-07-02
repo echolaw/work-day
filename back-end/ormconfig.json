@@ -4,8 +4,11 @@
   "database": "work_day_dev",
   "username": "workDay",
   "password": "workDayDev",
-  "entities": [
-    "src/**/**.entity{.ts,.js}"
-  ],
-  "synchronize": true
+  "entities": ["./src/**/**.entity{.ts,.js}"],
+  "synchronize": true,
+  "columns": {
+    "updatedAt": {
+      "updateDate": true
+    }
+  }
 }

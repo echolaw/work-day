@@ -2,18 +2,18 @@
 # yarn lockfile v1
 
 
-"@nestjs/common@^5.0.0":
+"@nestjs/common@^5.0.1":
   version "5.0.1"
-  resolved "http://registry.npm.taobao.org/@nestjs/common/download/@nestjs/common-5.0.1.tgz#98378d3578c8d1f337452b06f83abad42e1e0cee"
+  resolved "http://r.cnpmjs.org/@nestjs/common/download/@nestjs/common-5.0.1.tgz#98378d3578c8d1f337452b06f83abad42e1e0cee"
   dependencies:
     axios "0.17.1"
     cli-color "1.2.0"
     deprecate "1.0.0"
     multer "1.3.0"
 
-"@nestjs/core@^5.0.0":
+"@nestjs/core@^5.0.1":
   version "5.0.1"
-  resolved "http://registry.npm.taobao.org/@nestjs/core/download/@nestjs/core-5.0.1.tgz#24dd00bf6605ecc786e59cdf29d0f9cbe6b2a828"
+  resolved "http://r.cnpmjs.org/@nestjs/core/download/@nestjs/core-5.0.1.tgz#24dd00bf6605ecc786e59cdf29d0f9cbe6b2a828"
   dependencies:
     body-parser "1.18.2"
     cors "2.8.4"
@@ -22,9 +22,9 @@
     object-hash "1.3.0"
     optional "0.1.4"
 
-"@nestjs/passport@^1.0.10":
-  version "1.0.10"
-  resolved "http://registry.npm.taobao.org/@nestjs/passport/download/@nestjs/passport-1.0.10.tgz#fd606a79fb444b59ecb813a5bed5938e55e9f0fa"
+"@nestjs/passport@^1.1.0":
+  version "1.1.0"
+  resolved "http://r.cnpmjs.org/@nestjs/passport/download/@nestjs/passport-1.1.0.tgz#9edb581a7545a047721cd7430cdb4ea4b0388c83"
 
 "@nestjs/testing@^5.0.1":
   version "5.0.1"
@@ -33,9 +33,9 @@
     deprecate "1.0.0"
     optional "0.1.4"
 
-"@nestjs/typeorm@^5.0.0":
-  version "5.0.0"
-  resolved "http://registry.npm.taobao.org/@nestjs/typeorm/download/@nestjs/typeorm-5.0.0.tgz#d8ae64cb03d350e1fe4c7cea58d62fa4c3b2e4e2"
+"@nestjs/typeorm@^5.0.2":
+  version "5.0.2"
+  resolved "http://r.cnpmjs.org/@nestjs/typeorm/download/@nestjs/typeorm-5.0.2.tgz#57fa11f6f4e15eb5a4f33a16d7b27b99a2db419b"
 
 "@types/bcrypt@^2.0.0":
   version "2.0.0"
@@ -83,6 +83,10 @@
   dependencies:
     "@types/node" "*"
 
+"@types/lodash@^4.14.110":
+  version "4.14.110"
+  resolved "http://r.cnpmjs.org/@types/lodash/download/@types/lodash-4.14.110.tgz#fb07498f84152947f30ea09d89207ca07123461e"
+
 "@types/mime@*":
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/@types/mime/download/@types/mime-2.0.0.tgz#5a7306e367c539b9f6543499de8dd519fac37a8b"
@@ -91,9 +95,9 @@
   version "10.3.0"
   resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-10.3.0.tgz#078516315a84d56216b5d4fed8f75d59d3b16cac"
 
-"@types/node@^8.10.18":
-  version "8.10.18"
-  resolved "http://registry.npm.taobao.org/@types/node/download/@types/node-8.10.18.tgz#eb9ad8b0723d13fa9bc8b42543e3661ed805f2bb"
+"@types/node@^10.5.1":
+  version "10.5.1"
+  resolved "http://r.cnpmjs.org/@types/node/download/@types/node-10.5.1.tgz#d578446f4abff5c0b49ade9b4e5274f6badaadfc"
 
 "@types/passport-jwt@^3.0.1":
   version "3.0.1"
@@ -1419,6 +1423,10 @@ lodash.once@^4.0.0:
   version "4.1.1"
   resolved "http://registry.npm.taobao.org/lodash.once/download/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
 
+lodash@^4.17.10:
+  version "4.17.10"
+  resolved "http://r.cnpmjs.org/lodash/download/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
+
 lowercase-keys@^1.0.0:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/lowercase-keys/download/lowercase-keys-1.0.1.tgz#6f9e30b47084d971a7c820ff15a6c5167b74c26f"
@@ -1663,7 +1671,7 @@ node-pre-gyp@0.9.1:
 
 node-pre-gyp@^0.10.0:
   version "0.10.0"
-  resolved "http://registry.npm.taobao.org/node-pre-gyp/download/node-pre-gyp-0.10.0.tgz#6e4ef5bb5c5203c6552448828c852c40111aac46"
+  resolved "http://r.cnpmjs.org/node-pre-gyp/download/node-pre-gyp-0.10.0.tgz#6e4ef5bb5c5203c6552448828c852c40111aac46"
   dependencies:
     detect-libc "^1.0.2"
     mkdirp "^0.5.1"
@@ -2497,9 +2505,9 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "http://registry.npm.taobao.org/typedarray/download/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
 
-typeorm@^0.2.6:
-  version "0.2.6"
-  resolved "http://registry.npm.taobao.org/typeorm/download/typeorm-0.2.6.tgz#04e0ac43f4da9e3cdc2c18d6c5987a58f6ebefb8"
+typeorm@^0.2.7:
+  version "0.2.7"
+  resolved "http://r.cnpmjs.org/typeorm/download/typeorm-0.2.7.tgz#4bbbace80dc91b1303be13f42d44ebf01d1b2558"
   dependencies:
     app-root-path "^2.0.1"
     buffer "^5.1.0"
@@ -2515,9 +2523,9 @@ typeorm@^0.2.6:
     yargonaut "^1.1.2"
     yargs "^11.1.0"
 
-typescript@^2.8.0:
-  version "2.9.1"
-  resolved "http://registry.npm.taobao.org/typescript/download/typescript-2.9.1.tgz#fdb19d2c67a15d11995fd15640e373e09ab09961"
+typescript@^2.9.2:
+  version "2.9.2"
+  resolved "http://r.cnpmjs.org/typescript/download/typescript-2.9.2.tgz#1cbf61d05d6b96269244eb6a3bce4bd914e0f00c"
 
 undefsafe@^2.0.2:
   version "2.0.2"

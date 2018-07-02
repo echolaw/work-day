@@ -1,14 +1,14 @@
-import { Ng2anglePage } from './app.po';
+import { AppPage } from './app.po';
 
-describe('ng2angle App', function() {
-  let page: Ng2anglePage;
+describe('workspace-project App', () => {
+  let page: AppPage;
 
   beforeEach(() => {
-    page = new Ng2anglePage();
+    page = new AppPage();
   });
 
-  it('should display Angle in h1 tag', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('Angle');
+    expect(page.getParagraphText()).toEqual('Welcome to front-end!');
   });
 });

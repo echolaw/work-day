@@ -1,4 +1,4 @@
-import { Controller, Get, UseGuards, Post, HttpCode, HttpStatus, Body, UsePipes, ValidationPipe } from '@nestjs/common';
+import { Controller, Get, UseGuards, Post, HttpCode, HttpStatus, Body, Req } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
 import { AuthService } from './auth.service';
 import { LoginUserDto } from './dto/login-user.dto';
@@ -10,6 +10,14 @@ export class AuthController {
   @Post('token')
   @HttpCode(HttpStatus.OK)
   public async createToken(@Body() loginUserDto: LoginUserDto) {
-    return await this.authService.createToken(loginUserDto);
+    const resResult = await this.authService.createToken(loginUserDto);
+    return resResult;
+  }
+
+  @Get('app-data')
+  @UseGuards(AuthGuard('jwt'))
+  public async getUserAppData(@Req() req) {
+    const resResult = await this.authService.getUserAppData(req.user);
+    return resResult;
   }
 }
