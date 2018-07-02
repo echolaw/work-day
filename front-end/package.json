@@ -6,7 +6,7 @@
     "start": "ng serve -o",
     "build": "ng build --prod --build-optimizer",
     "test": "ng test",
-    "lint": "npm run lint:ts && npm run lint:style",
+    "lint": "yarm lint:ts && yarm lint:style",
     "e2e": "ng e2e",
     "analyze": "ng build --prod --build-optimizer --stats-json",
     "test-coverage": "ng test --code-coverage --watch=false",
@@ -14,7 +14,6 @@
     "lint:style": "stylelint \"{src}/**/*.less\" --syntax less",
     "lint-staged": "lint-staged",
     "tslint-check": "tslint-config-prettier-check ./tslint.json",
-    "precommit": "npm run lint-staged",
     "hmr": "ng serve -c=hmr"
   },
   "private": true,
@@ -84,21 +83,5 @@
     "ts-node": "~5.0.1",
     "tslint": "~5.9.1",
     "typescript": "~2.7.2"
-  },
-  "lint-staged": {
-    "*.{cmd,html,json,md,sh,txt,xml,yml}": [
-      "editorconfig-tools fix",
-      "git add"
-    ],
-    "*.ts": [
-      "npm run lint:ts",
-      "prettier --write",
-      "git add"
-    ],
-    "*.less": [
-      "npm run lint:style",
-      "prettier --write",
-      "git add"
-    ]
   }
 }
