@@ -91,12 +91,12 @@
       "git add"
     ],
     "*.ts": [
-      "npm run lint:ts",
+      "yarn lint:ts",
       "prettier --write",
       "git add"
     ],
     "*.less": [
-      "npm run lint:style",
+      "yarn lint:style",
       "prettier --write",
       "git add"
     ]
