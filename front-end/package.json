@@ -89,6 +89,16 @@
     "*.{cmd,html,json,md,sh,txt,xml,yml}": [
       "editorconfig-tools fix",
       "git add"
+    ],
+    "*.ts": [
+      "npm run lint:ts",
+      "prettier --write",
+      "git add"
+    ],
+    "*.less": [
+      "npm run lint:style",
+      "prettier --write",
+      "git add"
     ]
   }
 }
