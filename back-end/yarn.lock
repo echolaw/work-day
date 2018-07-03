@@ -22,6 +22,14 @@
     object-hash "1.3.0"
     optional "0.1.4"
 
+"@nestjs/graphql@^3.0.0":
+  version "3.0.0"
+  resolved "http://r.cnpmjs.org/@nestjs/graphql/download/@nestjs/graphql-3.0.0.tgz#9e478ca4b6f64a55b65abd0b8e50361a105a404e"
+  dependencies:
+    glob "^7.1.2"
+    lodash "^4.17.4"
+    merge-graphql-schemas "^1.3.0"
+
 "@nestjs/passport@^1.1.0":
   version "1.1.0"
   resolved "http://r.cnpmjs.org/@nestjs/passport/download/@nestjs/passport-1.1.0.tgz#9edb581a7545a047721cd7430cdb4ea4b0388c83"
@@ -73,6 +81,10 @@
     "@types/express-serve-static-core" "*"
     "@types/serve-static" "*"
 
+"@types/graphql@^0.13.2":
+  version "0.13.2"
+  resolved "http://r.cnpmjs.org/@types/graphql/download/@types/graphql-0.13.2.tgz#cb7d01f7c543541514eb3e192576cc04d305c363"
+
 "@types/jasmine@^2.8.8":
   version "2.8.8"
   resolved "http://registry.npm.taobao.org/@types/jasmine/download/@types/jasmine-2.8.8.tgz#bf53a7d193ea8b03867a38bfdb4fbb0e0bf066c9"
@@ -98,6 +110,10 @@
 "@types/node@^10.5.1":
   version "10.5.1"
   resolved "http://r.cnpmjs.org/@types/node/download/@types/node-10.5.1.tgz#d578446f4abff5c0b49ade9b4e5274f6badaadfc"
+
+"@types/node@^9.4.6":
+  version "9.6.22"
+  resolved "http://r.cnpmjs.org/@types/node/download/@types/node-9.6.22.tgz#05b55093faaadedea7a4b3f76e9a61346a6dd209"
 
 "@types/passport-jwt@^3.0.1":
   version "3.0.1"
@@ -180,6 +196,51 @@ anymatch@^2.0.0:
   dependencies:
     micromatch "^3.1.4"
     normalize-path "^2.1.1"
+
+apollo-cache-control@^0.1.0:
+  version "0.1.1"
+  resolved "http://r.cnpmjs.org/apollo-cache-control/download/apollo-cache-control-0.1.1.tgz#173d14ceb3eb9e7cb53de7eb8b61bee6159d4171"
+  dependencies:
+    graphql-extensions "^0.0.x"
+
+apollo-link@1.2.1:
+  version "1.2.1"
+  resolved "http://r.cnpmjs.org/apollo-link/download/apollo-link-1.2.1.tgz#c120b16059f9bd93401b9f72b94d2f80f3f305d2"
+  dependencies:
+    "@types/node" "^9.4.6"
+    apollo-utilities "^1.0.0"
+    zen-observable-ts "^0.8.6"
+
+apollo-server-core@^1.3.6:
+  version "1.3.6"
+  resolved "http://r.cnpmjs.org/apollo-server-core/download/apollo-server-core-1.3.6.tgz#08636243c2de56fa8c267d68dd602cb1fbd323e3"
+  dependencies:
+    apollo-cache-control "^0.1.0"
+    apollo-tracing "^0.1.0"
+    graphql-extensions "^0.0.x"
+
+apollo-server-express@^1.3.6:
+  version "1.3.6"
+  resolved "http://r.cnpmjs.org/apollo-server-express/download/apollo-server-express-1.3.6.tgz#2120b05021a87def44fafd846e8a0e2a32852db7"
+  dependencies:
+    apollo-server-core "^1.3.6"
+    apollo-server-module-graphiql "^1.3.4"
+
+apollo-server-module-graphiql@^1.3.4:
+  version "1.3.4"
+  resolved "http://r.cnpmjs.org/apollo-server-module-graphiql/download/apollo-server-module-graphiql-1.3.4.tgz#50399b7c51b7267d0c841529f5173e5fc7304de4"
+
+apollo-tracing@^0.1.0:
+  version "0.1.4"
+  resolved "http://r.cnpmjs.org/apollo-tracing/download/apollo-tracing-0.1.4.tgz#5b8ae1b01526b160ee6e552a7f131923a9aedcc7"
+  dependencies:
+    graphql-extensions "~0.0.9"
+
+apollo-utilities@^1.0.0, apollo-utilities@^1.0.1:
+  version "1.0.16"
+  resolved "http://r.cnpmjs.org/apollo-utilities/download/apollo-utilities-1.0.16.tgz#787310df4c3900a68c0beb3d351c59725a588cdb"
+  dependencies:
+    fast-json-stable-stringify "^2.0.0"
 
 app-root-path@^2.0.1:
   version "2.0.1"
@@ -566,6 +627,10 @@ copy-descriptor@^0.1.0:
   version "0.1.1"
   resolved "http://registry.npm.taobao.org/copy-descriptor/download/copy-descriptor-0.1.1.tgz#676f6eb3c39997c2ee1ac3a924fd6124748f578d"
 
+core-js@^2.5.3:
+  version "2.5.7"
+  resolved "http://r.cnpmjs.org/core-js/download/core-js-2.5.7.tgz#f972608ff0cead68b841a16a932d0b183791814e"
+
 core-util-is@~1.0.0:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/core-util-is/download/core-util-is-1.0.2.tgz#b5fd54220aa2bc5ab57aab7140c940754503c1a7"
@@ -625,7 +690,7 @@ deep-extend@^0.6.0:
   version "0.6.0"
   resolved "http://registry.npm.taobao.org/deep-extend/download/deep-extend-0.6.0.tgz#c4fa7c95404a17a9c3e8ca7e1537312b736330ac"
 
-deepmerge@^2.0.1:
+deepmerge@^2.0.1, deepmerge@^2.1.0:
   version "2.1.1"
   resolved "http://registry.npm.taobao.org/deepmerge/download/deepmerge-2.1.1.tgz#e862b4e45ea0555072bf51e7fd0d9845170ae768"
 
@@ -663,6 +728,10 @@ depd@~1.1.1, depd@~1.1.2:
 deprecate@1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/deprecate/download/deprecate-1.0.0.tgz#661490ed2428916a6c8883d8834e5646f4e4a4a8"
+
+deprecated-decorator@^0.1.6:
+  version "0.1.6"
+  resolved "http://r.cnpmjs.org/deprecated-decorator/download/deprecated-decorator-0.1.6.tgz#00966317b7a12fe92f3cc831f7583af329b86c37"
 
 destroy@~1.0.4:
   version "1.0.4"
@@ -871,6 +940,10 @@ extglob@^2.0.4:
     snapdragon "^0.8.1"
     to-regex "^3.0.1"
 
+fast-json-stable-stringify@^2.0.0:
+  version "2.0.0"
+  resolved "http://r.cnpmjs.org/fast-json-stable-stringify/download/fast-json-stable-stringify-2.0.0.tgz#d5142c0caee6b1189f87d3a76111064f86c8bbf2"
+
 figlet@^1.1.1:
   version "1.2.0"
   resolved "http://registry.npm.taobao.org/figlet/download/figlet-1.2.0.tgz#6c46537378fab649146b5a6143dda019b430b410"
@@ -1015,6 +1088,29 @@ got@^6.7.1:
 graceful-fs@^4.1.11, graceful-fs@^4.1.2:
   version "4.1.11"
   resolved "http://registry.npm.taobao.org/graceful-fs/download/graceful-fs-4.1.11.tgz#0e8bdfe4d1ddb8854d64e04ea7c00e2a026e5658"
+
+graphql-extensions@^0.0.x, graphql-extensions@~0.0.9:
+  version "0.0.10"
+  resolved "http://r.cnpmjs.org/graphql-extensions/download/graphql-extensions-0.0.10.tgz#34bdb2546d43f6a5bc89ab23c295ec0466c6843d"
+  dependencies:
+    core-js "^2.5.3"
+    source-map-support "^0.5.1"
+
+graphql-tools@^3.0.4:
+  version "3.0.4"
+  resolved "http://r.cnpmjs.org/graphql-tools/download/graphql-tools-3.0.4.tgz#d08aa75db111d704cba05d92afd67ec5d1dc6b24"
+  dependencies:
+    apollo-link "1.2.1"
+    apollo-utilities "^1.0.1"
+    deprecated-decorator "^0.1.6"
+    iterall "^1.1.3"
+    uuid "^3.1.0"
+
+graphql@^0.13.2:
+  version "0.13.2"
+  resolved "http://r.cnpmjs.org/graphql/download/graphql-0.13.2.tgz#4c740ae3c222823e7004096f832e7b93b2108270"
+  dependencies:
+    iterall "^1.2.1"
 
 has-ansi@^2.0.0:
   version "2.0.0"
@@ -1311,6 +1407,10 @@ isobject@^3.0.0, isobject@^3.0.1:
   version "3.0.1"
   resolved "http://registry.npm.taobao.org/isobject/download/isobject-3.0.1.tgz#4e431e92b11a9731636aa1f9c8d1ccbcfdab78df"
 
+iterall@^1.1.3, iterall@^1.2.1:
+  version "1.2.2"
+  resolved "http://r.cnpmjs.org/iterall/download/iterall-1.2.2.tgz#92d70deb8028e0c39ff3164fdbf4d8b088130cd7"
+
 iterare@0.0.8:
   version "0.0.8"
   resolved "http://registry.npm.taobao.org/iterare/download/iterare-0.0.8.tgz#a969a80a1fbff6b78f28776594d7bc2bdfab6aad"
@@ -1423,7 +1523,7 @@ lodash.once@^4.0.0:
   version "4.1.1"
   resolved "http://registry.npm.taobao.org/lodash.once/download/lodash.once-4.1.1.tgz#0dd3971213c7c56df880977d504c88fb471a97ac"
 
-lodash@^4.17.10:
+lodash@^4.17.10, lodash@^4.17.4:
   version "4.17.10"
   resolved "http://r.cnpmjs.org/lodash/download/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
 
@@ -1494,6 +1594,14 @@ memoizee@^0.4.3:
 merge-descriptors@1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/merge-descriptors/download/merge-descriptors-1.0.1.tgz#b00aaa556dd8b44568150ec9d1b953f3f90cbb61"
+
+merge-graphql-schemas@^1.3.0:
+  version "1.5.2"
+  resolved "http://r.cnpmjs.org/merge-graphql-schemas/download/merge-graphql-schemas-1.5.2.tgz#7e75afb56cea6ff163924744846817d054c1ebaf"
+  dependencies:
+    deepmerge "^2.1.0"
+    glob "^7.1.2"
+    is-glob "^4.0.0"
 
 methods@~1.1.2:
   version "1.1.2"
@@ -2254,7 +2362,7 @@ source-map-resolve@^0.5.0:
     source-map-url "^0.4.0"
     urix "^0.1.0"
 
-source-map-support@^0.5.6:
+source-map-support@^0.5.1, source-map-support@^0.5.6:
   version "0.5.6"
   resolved "http://registry.npm.taobao.org/source-map-support/download/source-map-support-0.5.6.tgz#4435cee46b1aab62b8e8610ce60f788091c51c13"
   dependencies:
@@ -2606,6 +2714,10 @@ utils-merge@1.0.1:
   version "1.0.1"
   resolved "http://registry.npm.taobao.org/utils-merge/download/utils-merge-1.0.1.tgz#9f95710f50a267947b2ccc124741c1028427e713"
 
+uuid@^3.1.0:
+  version "3.3.2"
+  resolved "http://r.cnpmjs.org/uuid/download/uuid-3.3.2.tgz#1b4af4955eb3077c501c23872fc6513811587131"
+
 validator@9.2.0:
   version "9.2.0"
   resolved "http://registry.npm.taobao.org/validator/download/validator-9.2.0.tgz#ad216eed5f37cac31a6fe00ceab1f6b88bded03e"
@@ -2743,3 +2855,13 @@ yargs@^11.1.0:
 yn@^2.0.0:
   version "2.0.0"
   resolved "http://registry.npm.taobao.org/yn/download/yn-2.0.0.tgz#e5adabc8acf408f6385fc76495684c88e6af689a"
+
+zen-observable-ts@^0.8.6:
+  version "0.8.9"
+  resolved "http://r.cnpmjs.org/zen-observable-ts/download/zen-observable-ts-0.8.9.tgz#d3c97af08c0afdca37ebcadf7cc3ee96bda9bab1"
+  dependencies:
+    zen-observable "^0.8.0"
+
+zen-observable@^0.8.0:
+  version "0.8.8"
+  resolved "http://r.cnpmjs.org/zen-observable/download/zen-observable-0.8.8.tgz#1ea93995bf098754a58215a1e0a7309e5749ec42"

@@ -70,5 +70,12 @@
   "my_calendar": "My Calendar",
   "privilege_center": "Privilege Center",
   "user_manage": "User Manage",
-  "department_manage": "Department Manage"
+  "department_manage": "Department Manage",
+  "attendance_manage": "Attendance Manage",
+  "attendance_accraditation": "Attendance Accraditation",
+  "attendance_record": "Attendance Record",
+  "holiday_manage": "Holiday Manage",
+  "holiday_accraditation": "Holiday Accraditation",
+  "holiday_record": "Holiday Record",
+  "holiday_definition": "Holiday Definition"
 }

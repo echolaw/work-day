@@ -79,7 +79,7 @@ export class AuthService {
           {
             text: '我的空间',
             i18n: 'my_space',
-            icon: 'icon-speedometer',
+            icon: 'anticon anticon-home',
             children: [
               {
                 text: '我的信息',
@@ -96,8 +96,7 @@ export class AuthService {
           {
             text: '权限中心',
             i18n: 'privilege_center',
-            icon: 'icon-idcard',
-            shortcut_root: true,
+            icon: 'anticon anticon-idcard',
             children: [
               {
                 text: '用户管理',
@@ -109,6 +108,50 @@ export class AuthService {
                 text: '部门管理',
                 link: '/department-manage',
                 i18n: 'department_manage',
+                icon: 'icon-usergroup-add'
+              }
+            ]
+          },
+          {
+            text: '考勤管理',
+            i18n: 'attendance_manage',
+            icon: 'anticon anticon-calendar',
+            children: [
+              {
+                text: '考勤审批',
+                link: '/attendance-accraditation',
+                i18n: 'attendance_accraditation',
+                icon: 'icon-user'
+              },
+              {
+                text: '考勤记录',
+                link: '/attendance-record',
+                i18n: 'attendance_record',
+                icon: 'icon-usergroup-add'
+              }
+            ]
+          },
+          {
+            text: '请假管理',
+            i18n: 'holiday_manage',
+            icon: 'anticon anticon-tags-o',
+            children: [
+              {
+                text: '请假审批',
+                link: '/holiday-accraditation',
+                i18n: 'holiday_accraditation',
+                icon: 'icon-user'
+              },
+              {
+                text: '请假记录',
+                link: '/holiday-record',
+                i18n: 'holiday_record',
+                icon: 'icon-usergroup-add'
+              },
+              {
+                text: '请假定义',
+                link: '/holiday-definition',
+                i18n: 'holiday_definition',
                 icon: 'icon-usergroup-add'
               }
             ]

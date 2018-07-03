@@ -70,5 +70,12 @@
   "my_calendar": "我的日历",
   "privilege_center": "权限中心",
   "user_manage": "用户管理",
-  "department_manage": "部门管理"
+  "department_manage": "部门管理",
+  "attendance_manage": "考勤管理",
+  "attendance_accraditation": "考勤审批",
+  "attendance_record": "考勤记录",
+  "holiday_manage": "请假管理",
+  "holiday_accraditation": "请假审批",
+  "holiday_record": "请假记录",
+  "holiday_definition": "请假定义"
 }

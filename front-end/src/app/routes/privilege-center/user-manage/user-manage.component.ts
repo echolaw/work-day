@@ -148,7 +148,7 @@ export class UserManageComponent implements OnInit {
 
   add(tpl: TemplateRef<{}>) {
     this.modalSrv.create({
-      nzTitle: '新建规则',
+      nzTitle: '新建用户',
       nzContent: tpl,
       nzOnOk: () => {
         this.loading = true;
